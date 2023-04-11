@@ -1,0 +1,44 @@
+### save data to redis
+POST http://localhost:8081
+Content-Type: application/json
+
+{
+  "key" : "nobody@gmail.com",
+  "value" : "nobody"
+}
+
+### save data to redis
+POST http://localhost:8081
+Content-Type: application/json
+
+{
+  "key" : "jst0930@gmail.com",
+  "value" : "Steve Jeong"
+}
+
+### save data to redis
+POST http://localhost:8081
+Content-Type: application/json
+
+{
+  "key" : "psooni@gmail.com",
+  "value" : "Park Sooni"
+}
+
+
+### get data from redis
+GET http://localhost:8081/nobody@gmail.com
+
+
+### get data from redis
+GET http://localhost:8081/jst0930@gmail.com
+
+### get data from redis
+GET http://localhost:8081/psooni@gmail.com
+
+### get all the keys from redis
+GET http://localhost:8081/
+
+
+###
+GET http://localhost:8081/posts/1
